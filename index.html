@@ -1,0 +1,307 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>WebApp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+
+
+<header>
+              <div class="header-wrap">
+                <a   href="#">
+                    <img alt="netcraft" src="img/netcraft.png">
+                </a>
+
+                <form role="search" class="search-box">
+                    <input type="search" placeholder="search">
+                </form>
+              </div>
+</header>
+
+
+<div class="main-section">
+
+
+<div class="notifications hidden"></div>
+
+<nav>
+
+
+<div class="nav-box">
+
+<p> Select <br> Reporting Platform </p>
+
+
+
+    <ul>
+        <li>
+            <a href="#">Choose QS Report</a>
+            <ul>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Simple</a></li>
+                <li><a href="#">Business</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+<div class="nav-box">
+
+<p> Select <br> Dashboard </p>
+
+
+
+    <ul>
+        <li>
+            <a href="#">Choose dashboard</a>
+            <ul>
+                <li><a href="#">Account Dashboard</a></li>
+                <li><a href="#">ADM Dashboard</a></li>
+                <li><a href="#">OK Dashboard</a></li>
+                <li><a href="#">Text Dashboard</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+<div class="nav-box">
+
+<p> Help <br> & Tutorials </p>
+
+
+
+    <ul>
+        <li>
+            <a href="#">Choose guide</a>
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+                <li><a href="#">link 5</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+</nav>
+
+
+
+    <div class="tabs">
+
+                <div id="tabs-list">
+                    <ul>
+                        <li>
+                        <a class="tab-active" href="#quick-reports" rel="quick-reports">Quick Reports</a>
+                        </li>
+                        <li>
+                        <a class="" href="#my-folders" rel="my-folders">My Folders</a>
+                        </li>
+                        <li>
+                        <a class=""   href="#my-team-folders" rel="my-team-folders">My Team Folders</a>
+                        </li>
+                        <li>
+                        <a href="#public-folders" rel="public-folders">Public Folders</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tabs-list_content">
+
+                    <div class="tab" id="quick-reports">
+                        <div class="reports-options">
+                            <select class="bookmarks hidden" name="bookmarks" id="bookmarks-quickreports"  >
+                            </select>
+                            <div class="reports-options-buttons">
+                                <a class="btn-expand hidden expand-toleft" target="_blank" href="#" id="expand-quickreports">e</a>
+                                <button class="btn-settings active" id="btnSettings-quickreports">s</button>
+                            </div>
+                            <div id="quick-reports-settings-form" class="settings">
+                                <form class="frmSettings" id="quickreports" runat="server">
+
+                                    <fieldset class="form-fieldset">
+                                        <span class="report-num">Reprot 01</span>
+                                        <div class="input-wrapper rpt-name">
+                                            <label class=" rep-label" for="nameReport1">Name</label>
+                                            <input class="rep-input" placeholder="Site Name" id="nameReport1" type="text">
+                                        </div>
+                                        <div class="input-wrapper rpt-url">
+                                            <label class=" rep-label" for="urlReport1">URL</label>
+                                            <input class="rep-input url-input" placeholder="Site Url" id="urlReport1" type="url" pattern="https?://.+">
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset class="form-fieldset">
+                                        <span class="report-num">Reprot 02</span>
+                                        <div class="input-wrapper rpt-name">
+                                            <label class=" rep-label" for="nameReport2">Name</label>
+                                            <input class="rep-input" placeholder="Site Name" id="nameReport2" type="text">
+                                        </div>
+                                        <div class="input-wrapper rpt-url">
+                                            <label class=" rep-label" for="urlReport2">URL</label>
+                                            <input class="rep-input url-input" placeholder="Site Url" id="urlReport2" type="url" pattern="https?://.+">
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset class="form-fieldset">
+                                        <span class="report-num">Reprot 03</span>
+                                        <div class="input-wrapper rpt-name">
+                                            <label class=" rep-label" for="nameReport3">Name</label>
+                                            <input class="rep-input" placeholder="Site Name" id="nameReport3" type="text">
+                                        </div>
+                                        <div class="input-wrapper rpt-url">
+                                            <label class=" rep-label" for="urlReport3">URL</label>
+                                            <input type="url" class="rep-input url-input" id="urlReport3" placeholder="Site Url" pattern="https?://.+">
+                                        </div>
+                                    </fieldset>
+
+                                    <div class="form-footer">
+                                        <a href="#" id="cancel-quick-reports">Cancel</a>
+                                        <input id="submit" value="Save" type="submit">
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <div class="content-quickreports folder-content hidden">
+                            <iframe class="iframe iframe-quickreports" src="" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="folders-wraper tab hidden" id="my-folders">
+                        <div class="reports-options-buttons">
+                            <a class="btn-expand" href="http://jmargieh.com/">e</a>
+                        </div>
+                        <div class="folder-content">
+                            <iframe class="iframe" src="http://www.jmargieh.com/" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="team-folders-wraper tab hidden" data-js="formTab" id="my-team-folders">
+                        <div class="reports-options">
+
+                            <select class="bookmarks hidden" name="bookmarks" id="bookmarks-myteamfolders">
+                            </select>
+
+                            <div class="reports-options-buttons">
+                                <a class="btn-expand hidden expand-toleft" target="_blank" id="expand-myteamfolders" href="#">e</a>
+                                <button class="btn-settings active" id="btnSettings-myteamfolders">s</button>
+                            </div>
+
+                            <div id="settings-my-team-folders" class="settings">
+
+                                <form class="frmSettings" id="myteamfolders" runat="server">
+
+                                    <fieldset class="form-fieldset">
+                                        <span class="report-num">Folder 01</span>
+                                        <div class="input-wrapper rpt-name">
+                                            <input class="rep-input" placeholder="Site Name" id="nameFolder1" type="text">
+                                            <label class="rep-label" for="nameFolder1">Name</label>
+                                        </div>
+                                        <div class="input-wrapper rpt-url">
+                                            <input class="rep-input url-input" placeholder="Site Url" id="urlFolder" type="url" pattern="https?://.+">
+                                            <label class=" rep-label" for="urlFolder1">URL</label>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset class="form-fieldset">
+                                        <span class="report-num">Folder 02</span>
+                                        <div class="input-wrapper rpt-name">
+                                            <input class="rep-input" placeholder="Site Name" id="nameFolder2" type="text">
+                                            <label class=" rep-label" for="nameFolder2">Name</label>
+                                        </div>
+                                        <div class="input-wrapper rpt-url">
+                                            <input class="rep-input url-input" placeholder="Site Url" id="urlFolder2" type="url" pattern="https?://.+">
+                                            <label class=" rep-label" for="urlFolder2">URL</label>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset class="form-fieldset">
+                                        <span class="report-num">Folder 03</span>
+                                        <div class="input-wrapper rpt-name">
+                                            <input class="rep-input" placeholder="Site Name" id="nameFolder3" type="text">
+                                            <label class=" rep-label" for="nameFolder3">Name</label>
+                                        </div>
+                                        <div class="input-wrapper rpt-url">
+                                            <input class="rep-input url-input" placeholder="Site Url" id="urlFolder3" type="url" pattern="https?://.+">
+                                            <label class="rep-label" for="urlFolder3">URL</label>
+                                        </div>
+                                    </fieldset>
+
+                                    <div class="form-footer">
+                                        <a href="#" id="cancel-my-team-folders">Cancel</a>
+                                        <input id="submit" value="Save" type="submit">
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="content-myteamfolders folder-content hidden">
+                            <iframe class="iframe iframe-myteamfolders" src="" frameborder="0"></iframe>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="folders-wraper tab hidden" id="public-folders">
+
+                        <div class="reports-options-buttons">
+                            <a class="btn-expand" href="http://jmargieh.com/">e</a>
+                        </div>
+
+                        <div class="folder-content">
+                            <iframe class="iframe" src="http://www.jmargieh.com/" frameborder="0"></iframe>
+                        </div>
+
+                    </div>
+
+
+            </div>
+
+
+     </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+
+    </body>
+</html>
