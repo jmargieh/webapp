@@ -1,1 +1,1 @@
-![alt tag](https://jmargieh.github.com/jmargieh/webapp/img/webappinfo.png)
+![alt tag](https://jmargieh.github.io/webapp/img/webappinfo.png)
